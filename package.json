@@ -1,7 +1,7 @@
 {
-  "name": "@geiserman/js-linters",
-  "version": "1.0.17",
-  "description": "Configurations that will be used in backend services",
+  "name": "@geiserman/js-logger",
+  "version": "1.0.1",
+  "description": "Logger for js projects",
   "scripts": {
     "lint": "eslint ./",
     "lint:fix": "eslint ./ --fix",
@@ -9,20 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geiserman/js-linters.git"
+    "url": "git+https://github.com/geiserman/js-logger.git"
   },
-  "homepage": "https://github.com/geiserman/js-linters#readme",
+  "homepage": "https://github.com/geiserman/js-logger#readme",
   "dependencies": {
-    "eslint": "~7.24.0",
-    "eslint-config-airbnb-base": "~14.2.1",
-    "eslint-config-prettier": "~8.2.0",
-    "eslint-plugin-import": "~2.22.1",
-    "eslint-plugin-jest": "~24.3.5",
-    "eslint-plugin-prettier": "~3.4.0",
-    "prettier": "~2.2.1"
+    "@geiserman/js-linters": "^1.0.17",
+    "winston": "^3.8.2",
+    "stack-trace": "^0.0.10"
   },
   "eslintConfig": {
-    "extends": "./linters/eslintrc.js"
+    "extends": "./node_modules/@geiserman/js-linters/linters/eslintrc.js"
   },
-  "prettier": "./linters/prettier.config.js"
+  "prettier": "./node_modules/@geiserman/js-linters/linters/prettier.config.js"
 }

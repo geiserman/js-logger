@@ -1,4 +1,4 @@
-# js-linters
+# js-logger
 
 This repository holds reusable server-side oriented tools, like configuration files, development helper scripts, etc.
 
